@@ -23,7 +23,7 @@ app.add_middleware(
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 model = TrafficSignCNN()
-model.load_state_dict(torch.load("traffic_sign_cnn.pth", map_location=device))
+model.load_state_dict(torch.load("traffic_sign_cnn_2.pth", map_location=device))
 model.to(device)
 model.eval()
 
